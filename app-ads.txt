@@ -1,9 +1,5 @@
 bigoads.com, 200378360, DIRECT, f08c47fec0942fa0
 
-
-
-
-
 e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
 pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 27842, RESELLER, 0bfd66d529a55807
@@ -103,18 +99,6 @@ bidmachine.io, 1201, RESELLER
 themediagrid.com, A6CWLO, RESELLER, 35d5010d7789b49d
 bold-win.com, 1080, RESELLER, 71746737d0bab951
 zetaglobal.net, 689, RESELLER
-https://apkpure.com/p/com.zeeko.setat.org2026
-
-https://apkpure.com/p/com.zeeko.setat.org2026
-
-https://apkpure.com/p/com.zeeko.setat.org2026
-
-https://apkpure.com/p/com.zeeko.setat.org2026
-
-https://apkpure.com/p/com.zeeko.setat.org2026
-
-
-
 
 start.io, 166433166, DIRECT
 pubnative.net, 1007349, RESELLER, d641df8625486a7b
