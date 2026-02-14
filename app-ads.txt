@@ -99,7 +99,30 @@ bidmachine.io, 1201, RESELLER
 themediagrid.com, A6CWLO, RESELLER, 35d5010d7789b49d
 bold-win.com, 1080, RESELLER, 71746737d0bab951
 zetaglobal.net, 689, RESELLER
-
+pubmatic.com, 163120, reseller, 5d62403b186f2ace
+apester.com, 91071, direct
+rubiconproject.com, 27784, reseller, 0bfd66d529a55807
+rubiconproject.com, 21642, reseller, 0bfd66d529a55807
+lijit.com, 402418, reseller, fafdf38b16bf6b2b
+adgrid.io, 30264, reseller
+appnexus.com, 7664, reseller
+pubmatic.com, 160925, reseller, 5d62403b186f2ace
+rubiconproject.com, 20736, reseller, 0bfd66d529a55807
+toponad.com, 168240066616ab, reseller, 1d49fe424a1a456d
+rubiconproject.com, 28169, reseller, 0bfd66d529a55807
+twist.win, tw2400538, reseller
+media.net, 8cu65v935, reseller
+xandr.com, 11316, reseller
+themediagrid.com, sjyvmz, reseller, 35d5010d7789b49d
+triplelift.com, 9342, reseller, 6c33edb13117fd86
+netaddiction.it, 2037, reseller
+pubmatic.com, 156423, reseller, 5d62403b186f2ace
+pinklion.io, 190976892, direct
+display.io, 224613, reseller
+bidease.com, bidease_seller_49, reseller
+sovrn.com, 400766, reseller, fafdf38b16bf6b2b
+peak226.com, 12900, reseller
+bigo.sg, 887, reseller
 start.io, 166433166, DIRECT
 pubnative.net, 1007349, RESELLER, d641df8625486a7b
 pubnative.net, 1008289, RESELLER, d641df8625486a7b
