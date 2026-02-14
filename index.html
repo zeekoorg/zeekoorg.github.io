@@ -21,16 +21,16 @@
             padding: 20px 0;
             display: flex;
             flex-direction: column;
-            align-items: center; /* توسيط كل العناصر عمودياً */
+            align-items: center;
             min-height: 100vh;
             text-align: center;
             overflow-x: hidden;
             box-sizing: border-box;
         }
 
-        /* 2. الشريط العلوي (عرض 320 كما طلبت) */
+        /* 2. الشريط العلوي (عرض 320px) */
         .top-bar {
-            width: 320px; /* العرض المطلوب */
+            width: 320px;
             height: 60px;
             background-color: #012638;
             border-radius: 20px;
@@ -51,7 +51,7 @@
             font-weight: 900;
         }
 
-        /* 3. الشريط المتحرك (عرض 320 ليتناسق مع التوب بار) */
+        /* 3. الشريط المتحرك (عرض 320px) - بطيء ومعكوس الاتجاه */
         .marquee-wrapper {
             width: 320px;
             background-color: rgba(1, 38, 56, 0.6);
@@ -65,19 +65,20 @@
 
         .marquee-content {
             display: inline-block;
-            color: #84FF01; /* الأخضر الفاقع */
+            color: #84FF01;
             font-size: 13px;
             font-weight: bold;
-            /* حركة أسرع وتكرار لا نهائي */
-            animation: scroll-left 10s linear infinite;
+            /* تم تعديل السرعة إلى 25s (أبطأ) وتغيير اسم الأنيميشن */
+            animation: scroll-right 25s linear infinite;
         }
 
-        @keyframes scroll-left {
-            0% { transform: translateX(100%); } /* يبدأ من الحافة */
-            100% { transform: translateX(-120%); } /* يخرج ويعود بسرعة */
+        /* أنيميشن جديد يتحرك من اليسار لليمين */
+        @keyframes scroll-right {
+            0% { transform: translateX(-100%); } /* يبدأ من خارج الشاشة يساراً */
+            100% { transform: translateX(100%); } /* ينتهي خارج الشاشة يميناً */
         }
 
-        /* 4. أيقونة التطبيق */
+        /* 4. أيقونة التطبيق (تم تنظيف الكود لتطبيق هذا الستايل) */
         .app-logo {
             width: 110px;
             height: 110px;
@@ -85,9 +86,10 @@
             margin-bottom: 15px;
             border: 3px solid #02405F;
             box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            object-fit: cover; /* لضمان عدم مط الصورة */
         }
 
-        /* 5. الوصف (عرض متوسط بين التوب بار والأزرار) */
+        /* 5. الوصف */
         .description-box {
             width: 290px;
             background-color: rgba(1, 38, 56, 0.7);
@@ -106,12 +108,12 @@
             font-weight: 500;
         }
 
-        /* 6. الأزرار (عرض 260 كما طلبت) */
+        /* 6. الأزرار (عرض 260px) */
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 260px; /* العرض المطلوب */
+            width: 260px;
             height: 55px;
             margin-bottom: 15px;
             border-radius: 16px;
@@ -139,13 +141,11 @@
 
         /* ألوان الأزرار */
         .btn-green {
-            /* تدرج أخضر مثل التطبيق */
             background: linear-gradient(135deg, #004D40, #00695C); 
             border: 1px solid #4DB6AC;
         }
 
         .btn-blue {
-            /* تدرج أزرق */
             background: linear-gradient(135deg, #0277BD, #01579B);
             border: 1px solid #4FC3F7;
         }
@@ -166,7 +166,7 @@
             margin-top: 30px;
             font-size: 12px;
             color: #8b949e;
-            width: 320px; /* نفس عرض التوب بار */
+            width: 320px;
             border-top: 1px solid #02405F;
             padding-top: 20px;
         }
@@ -177,7 +177,6 @@
             margin: 0 8px;
             font-weight: bold;
         }
-
     </style>
 </head>
 <body>
@@ -188,11 +187,11 @@
 
     <div class="marquee-wrapper">
         <div class="marquee-content">
-            🔥 حصرياً: تم إضافة سيتات جديدة 2026 (عراقي، مصري، خليجي) .. تحديثات يومية للثيمات والأصوات .. حمل النسخة الأصلية الآن واستمتع بأقوى الإيقاعات! 🎹✅
+            ( مرحبا بكم في تطبيق سيتات اورج 2026 المقدم من العازف والمطور ZEEKO ORG )
         </div>
     </div>
 
-    <img src="https://image.winudf.com/v2/image1/Y29tLnplZWtvLnNldGF0Lm9yZzIwMjZfaWNvbl8xNzM2NTk2NTY2XzA2NA/icon.webp?w=140&fakeurl=1&type=.webp" alt="App Icon" class="app-logo">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVagMedo8bIdGttKrvPhbFv6LorYnA2f5bCpkeOvQRp7oC-LW_jC-5sYoYpw8bJFHLWh-plbRgQbaNvYVZL79DjR9vLB0FoaauRdEoaKl4xMjuErRNm-IxjLU_QlbqjWlDl8rgxyxNJVAxbL1K7ChPsrPRtp0zT2joahy4Pb48UEMw5YRRJPgzHEkG9hc/s16000/1000551183.webp" alt="Setat Org 2026 Apk" class="app-logo">
 
     <div class="description-box">
         <p>
@@ -216,7 +215,7 @@
     </div>
 
     <div class="footer">
-        <p>جميع الحقوق محفوظة © 2026 ZEEKO ORG</p>
+        <p>جميع الحقوق محفوظة © ZEEKO ORG</p>
         <p>
             <a href="https://www.zeekoorg.com/p/privacy-policy-setat.html" target="_blank">سياسة الخصوصية</a>
         </p>
