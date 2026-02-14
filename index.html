@@ -6,12 +6,13 @@
     <title>سيتات اورج 2026 - ZEEKO ORG</title>
     <meta name="description" content="تطبيق سيتات اورج 2026 من ZEEKO ORG">
     
+    <link rel="icon" type="image/webp" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVagMedo8bIdGttKrvPhbFv6LorYnA2f5bCpkeOvQRp7oC-LW_jC-5sYoYpw8bJFHLWh-plbRgQbaNvYVZL79DjR9vLB0FoaauRdEoaKl4xMjuErRNm-IxjLU_QlbqjWlDl8rgxyxNJVAxbL1K7ChPsrPRtp0zT2joahy4Pb48UEMw5YRRJPgzHEkG9hc/s16000/1000551183.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
 
     <style>
-        /* 1. إعدادات الصفحة العامة */
         body {
             font-family: 'Cairo', sans-serif;
             background-color: #1a2f1a;
@@ -28,7 +29,6 @@
             box-sizing: border-box;
         }
 
-        /* 2. الشريط العلوي (عرض 320px) */
         .top-bar {
             width: 320px;
             height: 60px;
@@ -51,7 +51,6 @@
             font-weight: 900;
         }
 
-        /* 3. الشريط المتحرك (عرض 320px) - بطيء ومعكوس الاتجاه */
         .marquee-wrapper {
             width: 320px;
             background-color: rgba(1, 38, 56, 0.6);
@@ -61,6 +60,7 @@
             margin-bottom: 20px;
             padding: 8px 0;
             border: 1px solid #02405F;
+            position: relative;
         }
 
         .marquee-content {
@@ -68,17 +68,15 @@
             color: #84FF01;
             font-size: 13px;
             font-weight: bold;
-            /* تم تعديل السرعة إلى 25s (أبطأ) وتغيير اسم الأنيميشن */
-            animation: scroll-right 25s linear infinite;
+            padding-left: 100%;
+            animation: scroll-text 20s linear infinite;
         }
 
-        /* أنيميشن جديد يتحرك من اليسار لليمين */
-        @keyframes scroll-right {
-            0% { transform: translateX(-100%); } /* يبدأ من خارج الشاشة يساراً */
-            100% { transform: translateX(100%); } /* ينتهي خارج الشاشة يميناً */
+        @keyframes scroll-text {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(150%); }
         }
 
-        /* 4. أيقونة التطبيق (تم تنظيف الكود لتطبيق هذا الستايل) */
         .app-logo {
             width: 110px;
             height: 110px;
@@ -86,10 +84,9 @@
             margin-bottom: 15px;
             border: 3px solid #02405F;
             box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-            object-fit: cover; /* لضمان عدم مط الصورة */
+            object-fit: cover;
         }
 
-        /* 5. الوصف */
         .description-box {
             width: 290px;
             background-color: rgba(1, 38, 56, 0.7);
@@ -108,7 +105,6 @@
             font-weight: 500;
         }
 
-        /* 6. الأزرار (عرض 260px) */
         .btn {
             display: flex;
             align-items: center;
@@ -139,7 +135,6 @@
             transform: scale(0.96);
         }
 
-        /* ألوان الأزرار */
         .btn-green {
             background: linear-gradient(135deg, #004D40, #00695C); 
             border: 1px solid #4DB6AC;
@@ -161,7 +156,6 @@
             font-size: 18px;
         }
 
-        /* 7. الفوتر */
         .footer {
             margin-top: 30px;
             font-size: 12px;
