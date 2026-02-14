@@ -4,220 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سيتات اورج 2026 - ZEEKO ORG</title>
-    <meta name="description" content="أضخم مكتبة سيتات حصرية وشعبية لتطبيق الأورج 2026.">
+    <meta name="description" content="تطبيق سيتات اورج 2026 من ZEEKO ORG">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
 
     <style>
-        /* 1. إعدادات الصفحة العامة (نفس خلفية التطبيق) */
+        /* 1. إعدادات الصفحة العامة */
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #1a2f1a; /* لون الخلفية الأخضر الداكن */
-            background-image: linear-gradient(to bottom, #011C28, #1a2f1a); /* تدرج لوني */
+            background-color: #1a2f1a;
+            background-image: linear-gradient(to bottom, #011C28, #1a2f1a); 
             color: #ffffff;
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            align-items: center; /* توسيط كل العناصر عمودياً */
             min-height: 100vh;
             text-align: center;
-        }
-
-        /* 2. الحاوية الرئيسية (تشبه واجهة الهاتف) */
-        .phone-container {
-            width: 100%;
-            max-width: 480px; /* عرض شاشة الجوال */
-            padding: 20px;
+            overflow-x: hidden;
             box-sizing: border-box;
         }
 
-        /* 3. الشريط العلوي (Top Bar) */
+        /* 2. الشريط العلوي (عرض 320 كما طلبت) */
         .top-bar {
+            width: 320px; /* العرض المطلوب */
+            height: 60px;
             background-color: #012638;
-            border-radius: 24px;
-            padding: 15px;
-            margin-bottom: 20px;
+            border-radius: 20px;
             border: 2px solid #02405F;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
-            justify-content: center; /* توسيط العنوان */
+            justify-content: center;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
             position: relative;
+            z-index: 10;
         }
 
         .top-bar h1 {
             margin: 0;
             font-size: 18px;
             color: white;
-            font-weight: bold;
+            font-weight: 900;
         }
 
-        /* 4. صورة التطبيق (داخل دائرة أو مربع بزوايا) */
-        .app-logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 30px;
-            margin: 20px auto;
-            border: 3px solid #02405F;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-            display: block;
-        }
-
-        /* 5. النصوص (الوصف) */
-        .description {
-            background-color: #012638;
-            border-radius: 20px;
-            padding: 15px;
-            margin: 20px 0;
-            color: #ffffff;
-            font-size: 14px;
-            line-height: 1.6;
+        /* 3. الشريط المتحرك (عرض 320 ليتناسق مع التوب بار) */
+        .marquee-wrapper {
+            width: 320px;
+            background-color: rgba(1, 38, 56, 0.6);
+            border-radius: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 20px;
+            padding: 8px 0;
             border: 1px solid #02405F;
         }
 
-        /* 6. الأزرار (نفس تصميم أزرار التطبيق) */
+        .marquee-content {
+            display: inline-block;
+            color: #84FF01; /* الأخضر الفاقع */
+            font-size: 13px;
+            font-weight: bold;
+            /* حركة أسرع وتكرار لا نهائي */
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); } /* يبدأ من الحافة */
+            100% { transform: translateX(-120%); } /* يخرج ويعود بسرعة */
+        }
+
+        /* 4. أيقونة التطبيق */
+        .app-logo {
+            width: 110px;
+            height: 110px;
+            border-radius: 28px;
+            margin-bottom: 15px;
+            border: 3px solid #02405F;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        /* 5. الوصف (عرض متوسط بين التوب بار والأزرار) */
+        .description-box {
+            width: 290px;
+            background-color: rgba(1, 38, 56, 0.7);
+            border-radius: 18px;
+            padding: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #02405F;
+            box-sizing: border-box;
+        }
+
+        .description-box p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        /* 6. الأزرار (عرض 260 كما طلبت) */
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            padding: 15px;
-            margin: 12px 0;
-            border-radius: 15px; /* زوايا دائرية */
+            width: 260px; /* العرض المطلوب */
+            height: 55px;
+            margin-bottom: 15px;
+            border-radius: 16px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 15px;
             color: white;
-            transition: transform 0.2s, opacity 0.2s;
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box;
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             position: relative;
             overflow: hidden;
         }
 
-        /* تأثير اللمس */
-        .btn:active {
-            transform: scale(0.95);
-            opacity: 0.9;
-        }
-
-        /* ألوان الأزرار المتدرجة (Gradient) */
-        .btn-green {
-            /* لون أخضر مثل أزرار القائمة */
-            background: linear-gradient(to right, #004D40, #00695C); 
-            border: 1px solid #4DB6AC;
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
         }
         
+        .btn:active {
+            transform: scale(0.96);
+        }
+
+        /* ألوان الأزرار */
+        .btn-green {
+            /* تدرج أخضر مثل التطبيق */
+            background: linear-gradient(135deg, #004D40, #00695C); 
+            border: 1px solid #4DB6AC;
+        }
+
         .btn-blue {
-            /* لون أزرق مثل زر الباي بال */
-            background: linear-gradient(to right, #01579B, #0277BD);
+            /* تدرج أزرق */
+            background: linear-gradient(135deg, #0277BD, #01579B);
             border: 1px solid #4FC3F7;
         }
 
-        .btn-dark {
-            /* لون داكن للخيارات الثانوية */
-            background: #012638;
-            border: 1px solid #02405F;
-            color: #8b949e;
+        .btn-huawei {
+            background: #263238;
+            border: 1px dashed #546E7A;
+            color: #90A4AE;
         }
 
-        /* أيقونات داخل الأزرار */
         .btn-icon {
-            font-size: 20px;
-            margin-left: 10px; /* مسافة بين النص والأيقونة */
+            margin-left: 10px;
+            font-size: 18px;
         }
 
         /* 7. الفوتر */
         .footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 12px;
             color: #8b949e;
+            width: 320px; /* نفس عرض التوب بار */
             border-top: 1px solid #02405F;
             padding-top: 20px;
         }
-
+        
         .footer a {
             color: #4DB6AC;
             text-decoration: none;
-            margin: 0 5px;
-        }
-
-        /* الشريط المتحرك (Marquee) */
-        .marquee-container {
-            background-color: rgba(1, 38, 56, 0.5);
-            padding: 5px 0;
-            margin-bottom: 20px;
-            overflow: hidden;
-            white-space: nowrap;
-            border-radius: 10px;
-        }
-        .marquee-text {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 15s linear infinite;
-            color: #84FF01; /* نفس اللون الأخضر الفاقع في التطبيق */
-            font-size: 12px;
+            margin: 0 8px;
             font-weight: bold;
-        }
-        @keyframes marquee {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(100%, 0); } /* للغة العربية الاتجاه معكوس */
         }
 
     </style>
 </head>
 <body>
 
-    <div class="phone-container">
-        
-        <div class="top-bar">
-            <h1>سيتات اورج 2026</h1>
+    <div class="top-bar">
+        <h1>سيتات اورج 2026</h1>
+    </div>
+
+    <div class="marquee-wrapper">
+        <div class="marquee-content">
+            🔥 حصرياً: تم إضافة سيتات جديدة 2026 (عراقي، مصري، خليجي) .. تحديثات يومية للثيمات والأصوات .. حمل النسخة الأصلية الآن واستمتع بأقوى الإيقاعات! 🎹✅
         </div>
+    </div>
 
-        <div class="marquee-container">
-            <div class="marquee-text">
-                حمل الآن أحدث نسخة من تطبيق سيتات أورج 2026 .. سيتات جديدة يومياً .. إيقاعات حصرية .. حمل الآن واستمتع! 🔥🎹
-            </div>
-        </div>
+    <img src="https://image.winudf.com/v2/image1/Y29tLnplZWtvLnNldGF0Lm9yZzIwMjZfaWNvbl8xNzM2NTk2NTY2XzA2NA/icon.webp?w=140&fakeurl=1&type=.webp" alt="App Icon" class="app-logo">
 
-        <img src="https://image.winudf.com/v2/image1/Y29tLnplZWtvLnNldGF0Lm9yZzIwMjZfaWNvbl8xNzM2NTk2NTY2XzA2NA/icon.webp?w=140&fakeurl=1&type=.webp" alt="App Icon" class="app-logo">
+    <div class="description-box">
+        <p>
+            تطبيق سيتات اورج 2026 من ZEEKO ORG ، جميع السيتات والأصوات والإيقاعات والثيمات في تطبيق واحد ، حمل التطبيق واستمتع.
+        </p>
+    </div>
 
-        <div class="description">
-            <h3 style="color: #4DB6AC; margin-top: 0;">أضخم مكتبة سيتات</h3>
-            <p>
-                حمل الآن أحدث السيتات اليمنية، الخليجية، والعراقية.<br>
-                جميع الروابط مباشرة وتدعم استكمال التحميل.
-            </p>
-        </div>
+    <a href="https://apkpure.com/p/com.zeeko.setat.org2026" class="btn btn-green" target="_blank">
+        <span class="btn-icon">📲</span>
+        تحميل من APKPure
+    </a>
 
-        <a href="https://apkpure.com/p/com.zeeko.setat.org2026" class="btn btn-green" target="_blank">
-            <span class="btn-icon">📲</span>
-            تحميل من APKPure
-        </a>
+    <a href="https://www.mediafire.com/file/4cwkbgg7j02eylj/سيتات+اورج+2026.apk/file" class="btn btn-blue" target="_blank">
+        <span class="btn-icon">📥</span>
+        تحميل مباشر (MediaFire)
+    </a>
 
-        <a href="https://www.mediafire.com/file/4cwkbgg7j02eylj/سيتات+اورج+2026.apk/file" class="btn btn-blue" target="_blank">
-            <span class="btn-icon">📥</span>
-            تحميل مباشر (MediaFire)
-        </a>
+    <div class="btn btn-huawei">
+        <span class="btn-icon">👜</span>
+        قريباً على متجر هواوي
+    </div>
 
-        <div class="btn btn-dark">
-            <span class="btn-icon">👜</span>
-            قريباً على متجر هواوي
-        </div>
-
-        <div class="footer">
-            <p>جميع الحقوق محفوظة © 2026 ZEEKO ORG</p>
-            <p>
-                <a href="https://www.zeekoorg.com/p/privacy-policy-setat.html" target="_blank">سياسة الخصوصية</a>
-                |
-                <a href="mailto:zeeko@example.com">اتصل بنا</a>
-            </p>
-        </div>
-
+    <div class="footer">
+        <p>جميع الحقوق محفوظة © 2026 ZEEKO ORG</p>
+        <p>
+            <a href="https://www.zeekoorg.com/p/privacy-policy-setat.html" target="_blank">سياسة الخصوصية</a>
+        </p>
     </div>
 
 </body>
