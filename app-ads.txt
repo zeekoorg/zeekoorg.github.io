@@ -126,4 +126,26 @@ conversantmedia.com, 100269, RESELLER, 03113cd04947736d
 spinx.biz, 1373698890, RESELLER
 video.unrulymedia.com, 475093422, RESELLER
 rubiconproject.com, 27714, RESELLER, 0bfd66d529a55807
+orbrx.ai, 8000869124, RESELLERsharethrough.com, KqNHFkhm, RESELLER, d53b998a7bd4ecd2
+rubiconproject.com, 27386, RESELLER, 0bfd66d529a55807
+acexchange.co.kr, 1288659831, RESELLER
+smartadserver.com, 4926, RESELLER, 060d053dcf45cbf3
+themediagrid.com, BRDHNJ, RESELLER, 35d5010d7789b49d
+pubmatic.com, 161151, RESELLER, 5d62403b186f2ace
+zmaticoo.com, 114122, RESELLER
+onetag.com, 9474378cb253f54, RESELLER
+33across.com, 001Pg00001B6I27IAF, RESELLER, bbea06d9c4d2853c
+axonix.com, 59143, RESELLER
+lijit.com, 535014, RESELLER, fafdf38b16bf6b2b
+media.net, 8CUF63MX7, RESELLER
+adyoulike.com, f78b24039641337f06634ab9a3da4b48, RESELLER
+krushmedia.com, AJxF6R572a9M6CaTvK, RESELLER
+rubiconproject.com, 24400, RESELLER, 0bfd66d529a55807
+azberry.com, 121011, RESELLER
+bidease.com, bidease_seller_49, RESELLER
+playdigo.com, 2041, RESELLER, 92011346d63d3c30
+conversantmedia.com, 100269, RESELLER, 03113cd04947736d
+spinx.biz, 1373698890, RESELLER
+video.unrulymedia.com, 475093422, RESELLER
+rubiconproject.com, 27714, RESELLER, 0bfd66d529a55807
 orbrx.ai, 8000869124, RESELLER
