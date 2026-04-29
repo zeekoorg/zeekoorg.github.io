@@ -19,51 +19,65 @@
             width: 90%;
             max-width: 400px;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             border: 2px solid #d4af37;
             border-radius: 15px;
             background-color: #262626;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
         }
-        h2 { margin-bottom: 10px; font-size: 1.5em; }
-        p { color: #ccc; font-size: 0.9em; margin-bottom: 20px; }
-        textarea {
+        h2 { margin-bottom: 5px; font-size: 1.5em; text-shadow: 1px 1px 2px #000; }
+        p { color: #aaa; font-size: 0.85em; margin-bottom: 20px; line-height: 1.4; }
+        
+        /* تنسيق مربعات الإدخال */
+        input[type="email"], input[type="text"], textarea {
             width: 100%;
-            height: 150px;
             background-color: #333;
             border: 1px solid #555;
-            border-radius: 10px;
+            border-radius: 8px;
             color: #fff;
-            padding: 10px;
+            padding: 12px;
             box-sizing: border-box;
-            resize: none;
             outline: none;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            font-family: 'Arial', sans-serif;
         }
-        textarea:focus { border-color: #d4af37; }
+        input:focus, textarea:focus { border-color: #d4af37; box-shadow: 0 0 5px rgba(212, 175, 55, 0.5); }
+        
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+        
         button {
             width: 100%;
             background: linear-gradient(to bottom, #d4af37, #b8860b);
             color: #000;
             border: none;
-            padding: 12px;
+            padding: 14px;
             border-radius: 8px;
             font-weight: bold;
             font-size: 1.1em;
             cursor: pointer;
+            transition: 0.2s;
         }
-        button:active { transform: scale(0.98); }
+        button:active { transform: scale(0.96); }
     </style>
 </head>
 <body>
 
 <div class="support-container">
-    <h2>مرحباً بك أيها القائد</h2>
-    <p>قدم ملاحظتك أو مشكلتك هنا وسيقوم فريقنا بمراجعتها فوراً.</p>
+    <h2>مركز قيادة الدعم</h2>
+    <p>أيها القائد، اكتب تفاصيل مشكلتك وسيقوم مستشارو الإمبراطورية بالرد عليك.</p>
     
     <form action="https://formspree.io/f/xdabnlwa" method="POST">
-        <textarea name="message" placeholder="اكتب ملاحظتك هنا..." required></textarea>
-        <button type="submit">إرسال الملاحظة</button>
+        
+        <input type="text" name="Player_Name" placeholder="اسمك في اللعبة (اختياري)">
+        
+        <input type="email" name="email" placeholder="بريدك الإلكتروني (لكي نرد عليك)" required>
+        
+        <textarea name="message" placeholder="اشرح مشكلتك أو ملاحظتك هنا بالتفصيل..." required></textarea>
+        
+        <button type="submit">إرسال المراسلة</button>
     </form>
 </div>
 
