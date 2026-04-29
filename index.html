@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سيتات اورج 2026 - ZEEKO ORG</title>
-    <meta name="description" content="تطبيق سيتات اورج 2026 من ZEEKO ORG">
+    <title>موقع المطور - ZEEKO ORG</title>
+    <meta name="description" content="التطبيقات والألعاب الرسمية من تطوير ZEEKO ORG">
     
     <link rel="icon" type="image/webp" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVagMedo8bIdGttKrvPhbFv6LorYnA2f5bCpkeOvQRp7oC-LW_jC-5sYoYpw8bJFHLWh-plbRgQbaNvYVZL79DjR9vLB0FoaauRdEoaKl4xMjuErRNm-IxjLU_QlbqjWlDl8rgxyxNJVAxbL1K7ChPsrPRtp0zT2joahy4Pb48UEMw5YRRJPgzHEkG9hc/s16000/1000551183.webp">
 
@@ -40,16 +40,9 @@
             justify-content: center;
             margin-bottom: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-            position: relative;
-            z-index: 10;
         }
 
-        .top-bar h1 {
-            margin: 0;
-            font-size: 18px;
-            color: white;
-            font-weight: 900;
-        }
+        .top-bar h1 { margin: 0; font-size: 20px; color: #F4D03F; font-weight: 900; }
 
         .marquee-wrapper {
             width: 320px;
@@ -57,10 +50,9 @@
             border-radius: 12px;
             overflow: hidden;
             white-space: nowrap;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             padding: 8px 0;
             border: 1px solid #02405F;
-            position: relative;
         }
 
         .marquee-content {
@@ -77,106 +69,64 @@
             100% { transform: translateX(150%); }
         }
 
-        .app-logo {
-            width: 110px;
-            height: 110px;
-            border-radius: 28px;
-            margin-bottom: 15px;
-            border: 3px solid #02405F;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        /* تنسيق الشبكة الجديد */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 320px;
+            margin-bottom: 30px;
+        }
+
+        .app-card {
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid #02405F;
+            border-radius: 18px;
+            padding: 15px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            border-color: #F4D03F;
+        }
+
+        .app-card-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            border: 2px solid #02405F;
+            margin-bottom: 12px;
             object-fit: cover;
         }
 
-        .description-box {
-            width: 290px;
-            background-color: rgba(1, 38, 56, 0.7);
-            border-radius: 18px;
-            padding: 15px;
-            margin-bottom: 25px;
+        .logo-gold { border-color: #F4D03F; }
+
+        .app-card-title {
+            color: white;
+            font-size: 14px;
+            margin: 0 0 12px 0;
+            font-weight: bold;
+        }
+
+        .app-card-btn {
+            background: #012638;
+            color: #4FC3F7;
             border: 1px solid #02405F;
-            box-sizing: border-box;
-        }
-
-        .description-box p {
-            margin: 0;
-            font-size: 14px;
-            line-height: 1.6;
-            color: #ffffff;
-            font-weight: 500;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 260px;
-            height: 55px;
-            margin-bottom: 15px;
-            border-radius: 16px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 15px;
-            color: white;
-            transition: all 0.2s ease-in-out;
-            box-sizing: border-box;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        }
-        
-        .btn:active {
-            transform: scale(0.96);
-        }
-
-        .btn-green {
-            background: linear-gradient(135deg, #004D40, #00695C); 
-            border: 1px solid #4DB6AC;
-        }
-
-        .btn-blue {
-            background: linear-gradient(135deg, #0277BD, #01579B);
-            border: 1px solid #4FC3F7;
-        }
-
-        .btn-huawei {
-            background: #263238;
-            border: 1px solid #546E7A;
-            color: white;
-        }
-
-        .btn-icon {
-            margin-left: 10px;
-            font-size: 18px;
-        }
-
-        .privacy-link {
-            margin-top: 5px;
-            font-size: 14px;
-            color: #4DB6AC;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            padding: 8px 15px;
-            border: 1px solid rgba(77, 182, 172, 0.3);
+            padding: 6px 15px;
             border-radius: 12px;
-            background-color: rgba(1, 38, 56, 0.4);
-            transition: all 0.2s;
-        }
-
-        .privacy-link:hover {
-            background-color: rgba(1, 38, 56, 0.8);
-            border-color: #4DB6AC;
+            font-size: 12px;
+            font-weight: bold;
         }
 
         .footer {
-            margin-top: 25px;
+            margin-top: auto;
             font-size: 12px;
             color: #8b949e;
             width: 320px;
@@ -188,41 +138,30 @@
 <body>
 
     <div class="top-bar">
-        <h1>سيتات اورج 2026</h1>
+        <h1>مشاريع ZEEKO ORG</h1>
     </div>
 
     <div class="marquee-wrapper">
         <div class="marquee-content">
-            ( مرحبا بكم في تطبيق سيتات اورج 2026 المقدم من العازف والمطور ZEEKO ORG )
+            ( أهلاً بكم في الموقع الرسمي للمطور ZEEKO ORG - تجدون هنا أحدث تطبيقاتنا وألعابنا )
         </div>
     </div>
 
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVagMedo8bIdGttKrvPhbFv6LorYnA2f5bCpkeOvQRp7oC-LW_jC-5sYoYpw8bJFHLWh-plbRgQbaNvYVZL79DjR9vLB0FoaauRdEoaKl4xMjuErRNm-IxjLU_QlbqjWlDl8rgxyxNJVAxbL1K7ChPsrPRtp0zT2joahy4Pb48UEMw5YRRJPgzHEkG9hc/s16000/1000551183.webp" alt="Setat Org 2026 Apk" class="app-logo">
+    <div class="grid-container">
+        
+        <a href="mobs-update.html" class="app-card">
+            <img src="https://zeekoorg.github.io/mobs_icon.png" alt="Mobs of Glory Logo" class="app-card-logo logo-gold">
+            <h3 class="app-card-title">حشود المجد</h3>
+            <span class="app-card-btn">التحميل 🎮</span>
+        </a>
 
-    <div class="description-box">
-        <p>
-            تطبيق سيتات اورج 2026 من ZEEKO ORG ، جميع السيتات والأصوات والإيقاعات والثيمات في تطبيق واحد ، حمل التطبيق واستمتع.
-        </p>
+        <a href="setat-download.html" class="app-card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVagMedo8bIdGttKrvPhbFv6LorYnA2f5bCpkeOvQRp7oC-LW_jC-5sYoYpw8bJFHLWh-plbRgQbaNvYVZL79DjR9vLB0FoaauRdEoaKl4xMjuErRNm-IxjLU_QlbqjWlDl8rgxyxNJVAxbL1K7ChPsrPRtp0zT2joahy4Pb48UEMw5YRRJPgzHEkG9hc/s16000/1000551183.webp" alt="Setat Org 2026 Logo" class="app-card-logo">
+            <h3 class="app-card-title">سيتات أورج</h3>
+            <span class="app-card-btn">التحميل 🎹</span>
+        </a>
+
     </div>
-
-    <a href="https://apkpure.com/p/com.zeeko.setat.org2026" class="btn btn-green" target="_blank">
-        <span class="btn-icon">📲</span>
-        تحميل من APKPure
-    </a>
-
-    <a href="https://www.mediafire.com/file/4cwkbgg7j02eylj/سيتات+اورج+2026.apk/file" class="btn btn-blue" target="_blank">
-        <span class="btn-icon">📥</span>
-        تحميل مباشر (MediaFire)
-    </a>
-
-    <a href="https://appgallery.huawei.com/app/C116925607" class="btn btn-huawei" target="_blank">
-        <span class="btn-icon">👜</span>
-        متجر هواوي
-    </a>
-
-    <a href="https://www.zeekoorg.com/p/privacy-policy-setat.html" class="privacy-link" target="_blank">
-        سياسة الخصوصية 🔒
-    </a>
 
     <div class="footer">
         <p>جميع الحقوق محفوظة © ZEEKO ORG</p>
