@@ -74,14 +74,46 @@
             color: white;
             border: none;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease;
         }
 
-        .btn-telegram { background: linear-gradient(135deg, #0088cc, #005c8a); border: 1px solid #33aadd; }
+        .btn:hover {
+            transform: scale(1.02);
+        }
+
         .btn-mediafire { background: linear-gradient(135deg, #0277BD, #01579B); border: 1px solid #4FC3F7; }
         .btn-apkpure { background: linear-gradient(135deg, #004D40, #00695C); border: 1px solid #4DB6AC; }
         .btn-huawei { background: #263238; border: 1px solid #546E7A; }
 
         .btn-icon { margin-left: 12px; font-size: 20px; }
+
+        /* زر سياسة الخصوصية في الأسفل */
+        .privacy-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 20px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            box-shadow: none;
+            width: auto;
+            height: auto;
+            letter-spacing: 0.5px;
+        }
+
+        .privacy-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-color: #F4D03F;
+            transform: scale(1.03);
+        }
+
+        .privacy-btn .btn-icon {
+            font-size: 16px;
+            margin-left: 8px;
+        }
     </style>
 </head>
 <body>
@@ -90,26 +122,31 @@
         <h1>تحديث حشود المجد ⚔️</h1>
     </div>
 
+    <!-- تأكد من رفع الصورة أو استخدام رابط مباشر صحيح -->
     <img src="https://zeekoorg.github.io/mobs_icon.png" alt="Mobs of Glory Logo" class="app-logo">
 
     <div class="description-box">
         <p>أيها المُهيب، الإصدار الجديد متاح الآن!<br>اختر السيرفر المناسب لك لتحميل التحديث ومواصلة حماية إمبراطوريتك.</p>
     </div>
 
-    <a href="#" class="btn btn-telegram">
-        <span class="btn-icon">✈️</span> تحميل عبر تيليجرام (سريع)
-    </a>
-
-    <a href="#" class="btn btn-mediafire">
+    <!-- زر ميديا فاير -->
+    <a href="https://www.mediafire.com/file/fr1zb4awwn12f1n/حشود+المجد.apk/file" class="btn btn-mediafire" target="_blank" rel="noopener noreferrer">
         <span class="btn-icon">📥</span> تحميل مباشر (MediaFire)
     </a>
 
-    <a href="#" class="btn btn-apkpure">
+    <!-- زر متجر هواوي -->
+    <a href="https://appgallery.huawei.com/app/C117592817" class="btn btn-huawei" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon">👜</span> متجر هواوي (AppGallery)
+    </a>
+
+    <!-- زر APKPure -->
+    <a href="https://apkpure.com/p/com.zeekoorg.mobsofglory" class="btn btn-apkpure" target="_blank" rel="noopener noreferrer">
         <span class="btn-icon">📲</span> متجر APKPure
     </a>
 
-    <a href="#" class="btn btn-huawei">
-        <span class="btn-icon">👜</span> متجر هواوي (AppGallery)
+    <!-- زر سياسة الخصوصية في الأسفل -->
+    <a href="https://www.zeekoorg.com/p/privacy-policy-mobs-of-glory.html" class="btn privacy-btn" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon">🔒</span> سياسة الخصوصية
     </a>
 
 </body>
